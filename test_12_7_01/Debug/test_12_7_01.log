@@ -1,0 +1,3 @@
+﻿  test_12_7_01.c
+d:\练习.c\test_12_7_01\test_12_7_01\test_12_7_01.c(30): error C2084: 函数“ListNode *ReverseList(ListNode *)”已有主体
+  d:\练习.c\test_12_7_01\test_12_7_01\test_12_7_01.c(10): note: 参见“ReverseList”的前一个定义

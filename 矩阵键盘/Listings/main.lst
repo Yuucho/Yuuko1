@@ -1,0 +1,45 @@
+C51 COMPILER V9.54   MAIN                                                                  12/18/2021 17:46:24 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: E:\keil5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main.l
+                    -st) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          #include "Delay.H"
+   3          #include "LCD1602.H"
+   4          #include "MatrixKey.H"
+   5          
+   6          unsigned char KeyNum;
+   7          void main()
+   8          {
+   9   1        LCD_Init();
+  10   1        LCD_ShowString(1,1,"CET-4:"); 
+  11   1        LCD_ShowString(2,1,"Good lucky");
+  12   1        while(1)
+  13   1        {
+  14   2          KeyNum=MatrixKey();
+*** WARNING C206 IN LINE 14 OF main.c: 'MatrixKey': missing function-prototype
+  15   2          if(KeyNum)
+  16   2          {
+  17   3            LCD_ShowNum(2,1,KeyNum,2);
+  18   3          }
+  19   2        }
+  20   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     53    ----
+   CONSTANT SIZE    =     18    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,95 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/17/2021  22:56:45  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+E:\KEIL5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\project PRINT (.\Listings\project.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+
+
+LINK MAP OF MODULE:  .\Objects\project (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000AH     UNIT         ?DT?MAIN
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0063H     UNIT         ?PR?_NIXIE?MAIN
+            CODE    0063H     000CH     UNIT         ?C_INITSEG
+            CODE    006FH     000BH     UNIT         ?PR?MIAN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\project (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\project (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0000H         PUBLIC        _Nixie
+  D:0080H         PUBLIC        P0
+  B:00A0H.2       PUBLIC        P2_2
+  B:00A0H.3       PUBLIC        P2_3
+  B:00A0H.4       PUBLIC        P2_4
+  C:006FH         PUBLIC        mian
+  D:0008H         PUBLIC        NixieTable
+  -------         PROC          _NIXIE
+  D:0007H         SYMBOL        Location
+  D:0004H         SYMBOL        Number
+  C:0000H         LINE#         3
+  C:0000H         LINE#         4
+  C:0000H         LINE#         5
+  C:002DH         LINE#         6
+  C:002DH         LINE#         7
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/17/2021  22:56:45  PAGE 2
+
+
+  C:0031H         LINE#         8
+  C:0035H         LINE#         9
+  C:0039H         LINE#         10
+  C:003DH         LINE#         11
+  C:0045H         LINE#         12
+  C:004DH         LINE#         13
+  C:0055H         LINE#         14
+  C:005BH         LINE#         15
+  C:005BH         LINE#         16
+  C:0062H         LINE#         17
+  -------         ENDPROC       _NIXIE
+  -------         PROC          MIAN
+  C:006FH         LINE#         18
+  C:006FH         LINE#         19
+  C:006FH         LINE#         20
+  C:0078H         LINE#         21
+  C:0078H         LINE#         22
+  C:0078H         LINE#         24
+  -------         ENDPROC       MIAN
+  -------         ENDMOD        MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MIAN?MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?C_INITSEG
+
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+
+Program Size: data=18.0 xdata=0 code=122
+LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)
