@@ -1,0 +1,9 @@
+﻿  Sort.c
+  Stack.c
+  Test.c
+D:\练习.c\test_4_24\Test.c(66,15): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 18 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  test_4_24.vcxproj -> D:\练习.c\test_4_24\Release\test_4_24.exe
